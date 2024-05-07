@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "293520092745",
+    "project_id": "teamugs-bca95",
+    "storage_bucket": "teamugs-bca95.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:293520092745:android:df3353acf4052f9468d998",
+        "android_client_info": {
+          "package_name": "com.sahmyook.ugs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwZ5tLVmmVZdBsxrhiheN84R7o2cC5_ws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
