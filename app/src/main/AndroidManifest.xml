@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sahmyook.ugs">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -16,11 +16,15 @@
         android:theme="@style/Theme.UGS"
         tools:targetApi="31">
         <activity
+            android:name=".ChangePwdActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-        <activity android:name=".LoginActivity"
-            android:theme="@style/Theme.UGS"
-            android:exported="true">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.UGS">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,8 +33,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
     </application>
 
 </manifest>
