@@ -25,7 +25,7 @@ public class ChangePwdActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_changepwd);
 
-        //init
+        //inits
         mFirebaseAuth = FirebaseAuth.getInstance();
         mEtEmail = findViewById(R.id.et_email);
         mBtnSend = findViewById(R.id.btn_send);
