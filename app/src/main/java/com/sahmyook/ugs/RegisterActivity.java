@@ -59,11 +59,11 @@ public class RegisterActivity extends AppCompatActivity {
                             //setValue: DB에 insert
                             mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
                             //Toast - 회원가입 성공 이라는 메세지 띄우기
-                            Toast.makeText(RegisterActivity.this, "회원가입 성공", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "'SYS'의 일원이 되신것을 환영합니다!", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                             startActivity(intent);
                         } else {
-                            Toast.makeText(RegisterActivity.this, "회원가입 실패", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "올바른 이메일과 비밀번호를 입력해주세요.", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
