@@ -3,7 +3,7 @@ package com.sahmyook.ugs;
 public class UserAccount{
 
     private String idToken;     // firebase Uid(고유 토큰)
-    private String emailId;     // 이메일아이디
+    private String emailId;     // 이메일 아이디
     private String password;    // 비밀번호
 
     public UserAccount(){ }
