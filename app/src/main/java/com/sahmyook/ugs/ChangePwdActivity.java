@@ -43,7 +43,7 @@ public class ChangePwdActivity extends AppCompatActivity {
                 }
             }
         });
-        //뒤로가기 버튼
+        //뒤로가기버튼
         mBtnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
