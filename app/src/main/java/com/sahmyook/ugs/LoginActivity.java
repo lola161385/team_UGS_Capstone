@@ -21,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mDatabaseRef;
     private EditText mEtEmail, mEtPwd;
-    private Button mBtnRegister, mBtnLogin;
+    private Button mBtnRegister, mBtnLogin, mBtnChangePwd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mBtnRegister = findViewById(R.id.btn_register);
         mBtnLogin = findViewById(R.id.btn_login);
+        mBtnChangePwd = findViewById(R.id.btn_changepwd);
 
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,12 +58,19 @@ public class LoginActivity extends AppCompatActivity {
                 });
             }
         });
-
         // 회원가입 버튼 기능 구현
         mBtnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtnChangePwd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ChangePwdActivity.class);
                 startActivity(intent);
             }
         });
