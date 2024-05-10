@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+//test
         mBtnChangePwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
