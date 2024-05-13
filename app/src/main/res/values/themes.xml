@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.UGS" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="Theme.UGS" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/defaultfont</item>
+        <item name="colorControlHighlight">#0000ff</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
 </resources>
