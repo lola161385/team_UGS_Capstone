@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-        //제발 돼
+
         // 계정 탈퇴 할때는
         // mFireBaseAuth.getCurrentUser().delete();
     }
