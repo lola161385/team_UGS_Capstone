@@ -1,41 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cnb_unselectedColor="#777777">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/navigation_study_table"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
         android:enabled="true"
-        app:showAsAction="always"
-        app:cnb_iconColor="@color/navigation_color_mood" />
+        app:showAsAction="always"/>
     <item
         android:id="@+id/navigation_study_meeting"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
         app:showAsAction="always"
-        android:enabled="true"
-        app:cnb_iconColor="@color/navigation_color_habit"/>
+        android:enabled="true"/>
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
         app:showAsAction="always"
-        android:enabled="true"
-        app:cnb_iconColor="@color/navigation_color_add" />
+        android:enabled="true"/>
     <item
         android:id="@+id/navigation_friends_list"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
         app:showAsAction="always"
-        android:enabled="true"
-        app:cnb_iconColor="@color/navigation_color_chart" />
+        android:enabled="true"/>
     <item
         android:id="@+id/navigation_setting"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
         app:showAsAction="always"
-        android:enabled="true"
-        app:cnb_iconColor="@color/navigation_color_profile" />
+        android:enabled="true"/>
 </menu>

@@ -53,22 +53,22 @@ public class MainActivity extends AppCompatActivity {
         navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.navigation_study_table:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container,studyTableActivity).commit();
-                        return true;
-                    case R.id.navigation_study_meeting:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container,studyMettingActivity).commit();
-                        return true;
-                    case R.id.navigation_home:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container,homeActivity).commit();
-                        return true;
-                    case R.id.navigation_friends_list:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container,friendsActivity).commit();
-                        return true;
-                    case R.id.navigation_setting:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container,settingActivity).commit();
-                        return true;
+                int itemId = item.getItemId();
+                if (item.getItemId() == R.id.navigation_study_table) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container, studyTableActivity).commit();
+                    return true;
+                } else if (item.getItemId() == R.id.navigation_study_meeting) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container, studyMettingActivity).commit();
+                    return true;
+                } else if (item.getItemId() == R.id.navigation_home) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container, homeActivity).commit();
+                    return true;
+                } else if (item.getItemId() == R.id.navigation_friends_list) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container, friendsActivity).commit();
+                    return true;
+                } else if (item.getItemId() == R.id.navigation_setting) {
+                    getSupportFragmentManager().beginTransaction().replace(R.id.main_layout_container, settingActivity).commit();
+                    return true;
                 }
                 return false;
             }
