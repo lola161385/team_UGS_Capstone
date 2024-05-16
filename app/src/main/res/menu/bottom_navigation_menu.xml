@@ -7,25 +7,35 @@
         android:id="@+id/navigation_study_table"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
+        android:enabled="true"
+        app:showAsAction="always"
         app:cnb_iconColor="@color/navigation_color_mood" />
     <item
         android:id="@+id/navigation_study_meeting"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
+        app:showAsAction="always"
+        android:enabled="true"
         app:cnb_iconColor="@color/navigation_color_habit"/>
     <item
-        android:id="@+id/navigation_main"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
+        app:showAsAction="always"
+        android:enabled="true"
         app:cnb_iconColor="@color/navigation_color_add" />
     <item
         android:id="@+id/navigation_friends_list"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
+        app:showAsAction="always"
+        android:enabled="true"
         app:cnb_iconColor="@color/navigation_color_chart" />
     <item
         android:id="@+id/navigation_setting"
         android:icon="@drawable/baseline_account_circle_24"
         android:title=""
+        app:showAsAction="always"
+        android:enabled="true"
         app:cnb_iconColor="@color/navigation_color_profile" />
 </menu>
