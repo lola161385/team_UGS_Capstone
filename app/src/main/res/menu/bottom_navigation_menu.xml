@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#777777">
+
+    <item
+        android:id="@+id/navigation_study_table"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title=""
+        app:cnb_iconColor="@color/navigation_color_mood" />
+    <item
+        android:id="@+id/navigation_study_meeting"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title=""
+        app:cnb_iconColor="@color/navigation_color_habit"/>
+    <item
+        android:id="@+id/navigation_main"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title=""
+        app:cnb_iconColor="@color/navigation_color_add" />
+    <item
+        android:id="@+id/navigation_friends_list"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title=""
+        app:cnb_iconColor="@color/navigation_color_chart" />
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title=""
+        app:cnb_iconColor="@color/navigation_color_profile" />
+</menu>
