@@ -30,4 +30,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="253dp"
+        android:layout_height="86dp"
+        android:text="ㅇㅇ님의 프로필에 오신 것을 환영합니다! 토익 스터디를 구하고 있어요!                  프로젝트 개발자 분도 구해요!"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="219dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
