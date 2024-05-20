@@ -2,6 +2,7 @@ package com.sahmyook.ugs;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,6 +48,12 @@ public class RegisterActivity extends AppCompatActivity {
                 String strEmail = mEtEmail.getText().toString();
                 String strPwd = mEtPwd.getText().toString();
 
+                // 빈칸 확인
+                if (TextUtils.isEmpty(strEmail) || TextUtils.isEmpty(strPwd)) {
+                    Toast.makeText(RegisterActivity.this, "이메일과 비밀번호를 모두 입력해주세요.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 //인증 firebaseAuth 진행
                 mFirebaseAuth.createUserWithEmailAndPassword(strEmail, strPwd).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -59,7 +66,7 @@ public class RegisterActivity extends AppCompatActivity {
                             //setValue: DB에 insert
                             mDatabaseRef.child("UserAccount").child(firebaseUser.getUid()).setValue(account);
                             //Toast - 회원가입 성공 이라는 메세지 띄우기
-                            Toast.makeText(RegisterActivity.this, "'SYS'의 일원이 되신것을 환영합니다!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this, "회원가입 완료", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                             startActivity(intent);
                         } else {
