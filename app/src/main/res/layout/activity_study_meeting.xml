@@ -10,15 +10,21 @@
         android:layout_width="253dp"
         android:layout_height="86dp"
         android:text="ㅇㅇ님의 프로필에 오신 것을 환영합니다! 토익 스터디를 구하고 있어요!                  프로젝트 개발자 분도 구해요!"
-        tools:layout_editor_absoluteX="79dp"
-        tools:layout_editor_absoluteY="309dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="204dp"
         android:layout_height="241dp"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065"
         tools:srcCompat="@tools:sample/avatars" />
 
     <Button
@@ -26,14 +32,21 @@
         android:layout_width="81dp"
         android:layout_height="35dp"
         android:text="채팅시작"
-        tools:layout_editor_absoluteX="303dp"
-        tools:layout_editor_absoluteY="47dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="77dp"
         android:layout_height="38dp"
+        android:layout_marginEnd="24dp"
         android:text="친구요청"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="82dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
 </androidx.constraintlayout.widget.ConstraintLayout>

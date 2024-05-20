@@ -12,8 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.NavigableMap;
-
 public class MainActivity extends AppCompatActivity {
 
     FriendsActivity friendsActivity;

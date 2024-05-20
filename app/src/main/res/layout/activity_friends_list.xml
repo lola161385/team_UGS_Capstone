@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="45dp"
-        android:text="편집"
-        tools:layout_editor_absoluteX="335dp"
-        tools:layout_editor_absoluteY="70dp" />
 
     <TextView
         android:id="@+id/textView24"
@@ -19,6 +12,21 @@
         android:text="친구목록"
         android:textSize="18sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="62dp"
+        android:layout_height="33dp"
+        android:text="편집"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.882"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
 </androidx.constraintlayout.widget.ConstraintLayout>
